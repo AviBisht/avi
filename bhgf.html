@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Form</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                background-image: url(https://th.bing.com/th/id/R.057b31be70cc73b9d0c829205f90e02f?rik=PxrTE7PkNVZoRg&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f08%2fCool-nature-backgrounds-hd-resolution-1920x1080.jpg&ehk=hQzPW7PZMRmNSlTgkm1V0lR4FopZ7yGKJtUMRedf8wM%3d&risl=&pid=ImgRaw&r=0);
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 400px;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(255, 1, 1, 0.1);
+                background-image: url(https://th.bing.com/th/id/OIP.PnT_jS0y55OSRXMhlwu1ewHaEK?rs=1&pid=ImgDetMain);
+            }
+
+            fieldset {
+                border: 1px solid rgb(246, 0, 0);
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+
+            legend {
+                font-weight: bold;
+            }
+
+            label {
+                margin-bottom: 5px;
+            }
+
+            input, textarea {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 10px;
+                box-sizing: border-box;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            .gender {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            input[type="submit"] {
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend><b>Enter Your information</b></legend>
+                <label for="name">Enter your full name</label>
+                <input type="text" id="name" name="name" />
+                <label for="email">Enter your email</label>
+                <input type="email" id="email" name="email" />
+                <label for="pass">Enter your password</label>
+                <input type="password" id="pass" name="pass" />
+                <label for="confirmPass">Confirm your password</label>
+                <input type="password" id="confirmPass" name="confirmPass" />
+                <label>Enter your gender</label>
+                <div class="gender">
+                    <label><input type="radio" name="gender" value="male" />Male</label>
+                    <label><input type="radio" name="gender" value="female" />Female</label>
+                    <label><input type="radio" name="gender" value="others" />Others</label>
+                </div>
+                <label for="dob">Enter your Date of Birth</label>
+                <input type="date" id="dob" name="dob" />
+                <label for="address">Enter your Address:</label>
+                <textarea id="address" name="address"></textarea>
+                <input type="submit" value="submit" />
+                
+            </fieldset>
+        </form>
+    </body>
+</html>
